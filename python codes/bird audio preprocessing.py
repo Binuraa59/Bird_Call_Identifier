@@ -9,7 +9,7 @@ birds = ["cinereous_tinamou", "great_tinamou", "brown_tinamu"]
 
 # Preprocessing and Feature Extraction Functions
 def load_audio_files(bird_folder):
-    files = [f for f in os.listdir(bird_folder) if f.endswith('.mp3')]
+    files = [f for f in os.listdir(bird_folder) if f.endswith('.mp3') or f.endswith('.wav')]
     audio_files = []
     for file in files:
         file_path = os.path.join(bird_folder, file)
